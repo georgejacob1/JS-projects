@@ -41,5 +41,9 @@ clear.addEventListener("click", () => {
   });
 
   erase.addEventListener("click", () => {
-    input.value = input.value.substr(0,input.value.length -1);
+    // input.value = input.value.substr(0,input.value.length -1);
+    let a = input.value.split('');
+    a.length--;
+    input.value = a.join('');
+
   });
